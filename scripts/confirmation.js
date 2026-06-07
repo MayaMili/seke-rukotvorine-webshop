@@ -61,6 +61,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       </div>`;
   }
 
-  const shipping = subtotal >= 50 ? 0 : 5;
+  const shipping = 0;
   document.getElementById('order-total').textContent = `€${(subtotal + shipping).toFixed(2)}`;
 });
