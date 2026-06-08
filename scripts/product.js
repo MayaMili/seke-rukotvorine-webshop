@@ -37,9 +37,16 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Varijacije: krug sa slikom (normalni mod) + naziv boje (a11y mod);
   // aria-label osigurava da čitač ekrana uvijek pročita naziv boje
+  // const swatchesHTML = (product.colors || []).map(c => `
+  //   <button type="button" class="color-option" data-name="${c.name}" lang="hr"
+  //           aria-pressed="false" aria-label="${c.name}" title="${c.name}" onclick="selectColor(this)">
+  //     <span class="color-option-swatch" aria-hidden="true" style="background-image:url('images/${c.img}')"></span>
+  //     <span class="color-option-text">${c.name}</span>
+  //   </button>
+  // `).join('');
   const swatchesHTML = (product.colors || []).map(c => `
     <button type="button" class="color-option" data-name="${c.name}"
-            aria-pressed="false" aria-label="${c.name}" title="${c.name}" onclick="selectColor(this)">
+            aria-pressed="false" onclick="selectColor(this)">
       <span class="color-option-swatch" aria-hidden="true" style="background-image:url('images/${c.img}')"></span>
       <span class="color-option-text">${c.name}</span>
     </button>
