@@ -540,7 +540,7 @@ const data = {
           images: ["gumiceZaKosu/muslin/muslin1.jpg", 
                     "gumiceZaKosu/muslin/muslin2.jpg"],
           price: 3,
-          desc: "Muslin gumice s prerasnim ljetnim uzorcima, idealan detalj",
+          desc: "Muslin gumice s prekrasnim ljetnim uzorcima, idealan detalj",
           detail: "Muslin gumice za kosu sa prekrasnim ljetnim uzorcima, idealan detalj za ukrašavanje vaših frizura.",
           colors: [
 
