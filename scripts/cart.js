@@ -78,18 +78,6 @@ function renderCart() {
 
   document.getElementById('summary-products').innerHTML = summaryProductsHTML;
 
-  // const shippingFree = subtotal >= 50;
-  // const shipping = shippingFree ? 0 : 5;
-  // const total = subtotal + shipping;
-
-  // document.getElementById('subtotal-val').textContent = `€${subtotal.toFixed(2)}`;
-  // document.getElementById('shipping-val').textContent = shippingFree ? 'Besplatna' : `€${shipping.toFixed(2)}`;
-  // document.getElementById('shipping-val').className = shippingFree ? 'free' : '';
-  // document.getElementById('total-val').textContent = `€${total.toFixed(2)}`;
-  // document.getElementById('shipping-note').textContent = shippingFree
-  //   ? '🎉 Čestitamo! Imate besplatnu dostavu.'
-  //   : `Još €${(50 - subtotal).toFixed(2)} do besplatne dostave!`;
-
   const shipping = 0;
   const total = subtotal + shipping;
 
